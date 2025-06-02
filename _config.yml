@@ -1,0 +1,51 @@
+# username.github.io/_config.yml
+title: "Đỗ Phạm Phúc Tính"
+email: "dpptinh@gmail.com"
+description: "AI Engineer"
+baseurl: ""
+url: "https://dpptinh.github.io"
+
+author:
+  name: "Đỗ Phạm Phúc Tính"
+  bio: "AI Engineer"
+  location: "Ho Chi Minh city, Vietnam"
+  avatar: "assets/images/avt.jpg"
+  
+social:
+  github: "dpptinh"
+  linkedin: "dpptinh"
+  twitter: "dpptinh"
+  facebook: "dpptinh"
+  instagram: "dpptinh"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+google_analytics: "G-XXXXXXXXXX"
